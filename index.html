@@ -12,7 +12,7 @@
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Zahradnické služby Kusyn s.r.o.", "description": "Zahradnické služby Kusyn s.r.o. je prověřovaná firma s oprávněním pro: zahradnické služby kusyn s.r.o.. Pracujeme pořádně, férově a za dohodnutou cenu.", "address": {"@type": "PostalAddress", "streetAddress": "Chlebovická 319, 73943 Staříč", "addressLocality": "Staříč", "addressCountry": "CZ"}, "areaServed": "Staříč", "knowsAbout": ["Zahradnické služby Kusyn s.r.o."]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
 
 *{margin:0;padding:0;box-sizing:border-box}
@@ -74,31 +74,33 @@ footer{border-top:1px solid var(--navline);padding:36px 0;margin-top:30px}
 .hours strong{color:var(--text)}
 
 
-:root{--cardbg:#2a1512;
---cardline:#2a2a35;
+:root{--cardbg:#ffffff;
+--cardline:#eef0f3;
 --iconbg:color-mix(in srgb,var(--accent) 14%,transparent);
---navbg:#1a0e0cf5;--navline:#2a2a35;
---logo:#ffffff;--radius:14px;
---font:'Bitter', Georgia, serif;--tprop:border-color}
+--navbg:#f8fafcf5;--navline:#e8e8ec;
+--logo:#1a2e05;--radius:14px;
+--font:'IBM Plex Sans', system-ui, sans-serif;--tprop:border-color}
 
-:root{--bg0:#1a0e0c;--bg1:#2a1512;--accent:#ef4444;--text:#fee2e2;--muted:#c98a80}
-.nav{--navbg:#1a0e0cf2;--navline:#3f2723;--logo:#fff}
-.hero{padding:140px 0;background:
-linear-gradient(100deg,var(--bg0) 42%,rgba(26,14,12,.72) 100%),url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1600&q=70') center/cover}
-.hero h1{font-size:clamp(2.3rem,5.4vw,4rem);line-height:1.06;margin-bottom:20px}
-.hero h1 strong{color:var(--accent)}
-.hero p{color:var(--muted);margin-bottom:34px;max-width:46ch}
-.btn{display:inline-flex;background:var(--accent);color:#fff;padding:16px 40px;border-radius:8px;
-text-decoration:none;font-weight:800;transition:all .25s}
-.btn:hover{background:#dc2626;transform:translateY(-2px);box-shadow:0 10px 30px rgba(239,68,68,.35)}
-.services{padding:92px 0;background:var(--bg1)}
-.card{background:var(--bg0);border:1px solid #3f2723;border-radius:12px}
+:root{--bg0:#f8fafc;--bg1:#f0fdf0;--accent:#4e690b;--text:#1a2e05;--muted:#5a6b50}
+.nav{--navbg:#fffffff5;--navline:#e2e8f0;--logo:var(--text)}
+.hero{padding:120px 0;background:
+linear-gradient(135deg,#f0fdf0 0%,#fff 100%)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.hero-photo{height:380px;border-radius:20px;background:url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=1600&q=70') center/cover;
+box-shadow:24px 24px 0 var(--bg1),0 20px 50px rgba(29,78,216,.18)}
+@media(max-width:840px){.hero .wrap{grid-template-columns:1fr}.hero-photo{height:240px;order:-1}}
+.hero h1{font-size:clamp(2rem,4.4vw,3.3rem);margin-bottom:18px}
+.hero p{color:var(--muted);margin-bottom:30px;font-size:1.1rem}
+.btn{display:inline-flex;background:var(--accent);color:#fff;padding:15px 36px;border-radius:10px;
+text-decoration:none;font-weight:700;transition:filter .2s,transform .2s}
+.btn:hover{filter:brightness(1.12);transform:translateY(-1px)}
+.services{padding:90px 0;background:#fff}
+.card{border-radius:14px;border:1px solid #e2e8f0}
 .card:hover{border-color:var(--accent)}
-.about{background:var(--bg0);padding:90px 0;border-left:4px solid var(--accent)}
-.contact{background:var(--bg1);padding:90px 0}
-.ccard{background:var(--bg0);border:1px solid #3f2723;border-radius:12px}
-.ccard b{color:var(--accent)}
-.mapframe{border-radius:12px;border:1px solid #3f2723}
+.about{background:var(--bg1);padding:90px 0}
+.contact{padding:90px 0;background:#fff}
+.ccard{border-radius:14px;border:1px solid #e2e8f0;background:#fff}
+.mapframe{border-radius:14px}
 </style>
 </head>
 <body>
